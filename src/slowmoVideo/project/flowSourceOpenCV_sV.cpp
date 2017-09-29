@@ -27,6 +27,15 @@ FlowSourceOpenCV_sV::FlowSourceOpenCV_sV(Project_sV *project, int _algo, int _oc
 {
     ocl_device_index = _ocl_dev_idx;
     algo = _algo;
+
+    numLevels = 3;
+    numIters = 8;
+    winSize = 15;
+    polySigma = 1.2;
+    pyrScale = 0.5;
+    polyN = 5;
+    flags = 0;
+
     createDirectories();
 }
 
